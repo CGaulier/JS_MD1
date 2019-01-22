@@ -1,10 +1,10 @@
-#Mise en place d'un server js
+# Mise en place d'un server js
 - npm init -y
 - npm i -s express dotenv ejs path body-parser d3
 - créer un .gitignore ->ce qu'on veut pas sur notre github
 - créer un .env -> a mettre dans le gitignore
 
-##Taffer sur server
+## Taffer sur server
 - on commence par importer le dotenv
 - puis express (const)
 - puis path (const)

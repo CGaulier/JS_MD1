@@ -11,6 +11,7 @@
 
     // => Inner
     const FrontRouterClass = require('./routes/front/front.routes');
+    const D3RouterClass = require('./routes/d3/d3.routes')
 
 //
 
@@ -37,7 +38,10 @@
             server.use( bodyParser.urlencoded( { extended: true } ) )
 
             // = > Routers
+            // Router D3 tjrs au dessus de l'autre
+            const d3Router = new D3RouterClass();
             const frontRouter = new FrontRouterClass();
+            server.use( '/api/d3', d3Router.init() ); // nom d'acces
             server.use( '/', frontRouter.init() );
 
 
