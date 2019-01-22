@@ -24,11 +24,11 @@
             }
 
             if( rawData.value.length !== 0 ){
-                fetch( 'http://localhost:9876/api/d3', header )
+                fetch( 'http://localhost:9876/api/d3/convert', header )
                 .then( data => {
                    return data.json() // une fois la donnée en brut je renvoie en json
                 }) 
-                .then(jsonData => console.log(jsonData))
+                .then(jsonData => rawData.value = JSON.stringify(jsonData))
                 .catch(err => console.err(err));
             }
         })
