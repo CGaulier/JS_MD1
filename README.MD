@@ -17,3 +17,11 @@
 - faire un dossier routes contenant un dossier d3 et un autre front
 - faire dans front front.routes.js
 - revenir dans server et mettre le router correspondant. 
+
+## Faire la page et le code
+- compléter les route si besoin
+- puis dans www
+- index.html faire une page sympa et un lien script vers js/app.js
+- capter les infos du form
+- reccup les données
+- dans la routes d3 : il reccupère les données du body
